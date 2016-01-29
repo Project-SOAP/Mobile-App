@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="assets/ratchet/css/ratchet.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/pageslider.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<script id="login-tpl" type="text/template">
+    <div class="charteBleue-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="alignMiddle-div">
+                    <div class="text-center" id="errors-fields">
+
+                    </div>
+                    <div class="text-center">
+                        <p style="margin-bottom:50px;" class="charteBleue-title">VEUILLEZ VOUS IDENTIFIER</p>
+                    </div>
+                    <div class="form-group" style="margin-bottom:20px;">
+                        <select class="form-control" id="user-type">
+                            <option value="Driver">Driver</option>
+                            <option value="Technician">Technician</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="charteBleue-form-text" style="font-size: 15px !important;">IDENTIFIANT</label>
+                        <input type="text" class="form-control taillesInput charteBleue-form-input" id="identifiant" style="color: #555555 !important;" placeholder="identifiant">
+                    </div>
+                    <div class="form-group">
+                        <label class="charteBleue-form-text" style="font-size: 15px !important;">MOT DE PASSE</label>
+                        <input type="password" class="form-control taillesInput charteBleue-form-input" id="motdepasse" style="color: #555555 !important;" placeholder="mot de passe">
+                    </div>
+                    <div class="form-group" style="margin-top:50px;">
+                        <button type="submit" class="btn charteBleue-form-button taillesButton connexion-button">CONNEXION</button>
+                    </div>
+                    <div class="text-center" id="spinner-loader">
+                        
+                    </div>
+                    <div class="text-center" id="error-Authent">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="driver-main-tpl" type="text/template">
+    <div class="charteBleue-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="alignMiddle-div">
+                    <div class="text-center">
+                        <h1 class="charteBleue-title">Driver</h1>
+                        <button class="btn btn-warning send-info">Envoi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="technician-main-tpl" type="text/template">
+    <div class="charteBleue-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="alignMiddle-div">
+                    <div class="text-center">
+                        <h1 class="charteBleue-title">Technician</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script src="lib/handlebars.js"></script>
+<script src="cordova.js"></script>
+<script src="lib/jquery.js"></script>
+<script src="lib/pageslider.js"></script>
+<script src="lib/router.js"></script>
+
+<script src="http://212.227.108.163:20300/js/dependencies/sails.io.js"></script>
+<script>
+    io.sails.url = "http://212.227.108.163:20300";
+</script>
+
+<script src="js/LoginView.js"></script>
+<script src="js/DriverMainView.js"></script>
+<script src="js/TechnicianMainView.js"></script>
+<script src="js/app.js"></script>
+<script src="lib/fastclick.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

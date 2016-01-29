@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: url('../fonts/BebasNeue.ttf') format("truetype")
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url('../fonts/Lato-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/OpenSans-Regular.ttf') format("truetype");
+}
+
+ul {
+    clear: both;
+}
+
+.content {
+    position: absolute;
+}
+
+.bar-header-secondary>input {
+    margin-top: 6px;
+    height: 31px;
+}
+
+.table-view {
+    margin: 0 !important;
+    border: none;
+}
+
+.details h1 {
+    padding-top: 16px;
+    font-size: 18px;
+}
+
+.media-object {
+    width: 42px;
+    height: 42px;
+    border-radius: 25px;
+}
+
+.alignMiddle-div{
+  margin: 50px auto 0px auto;
+  width: 300px;
+  height: 300px;
+
+}
+
+.charteBleue-form-input{
+  background-color: #074A9F;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Open Sans";
+  width: 300px;
+}
+
+.charteBleue-body{
+  background-color: #003A84 !important;
+  height: 100%;
+  letter-spacing: 2px;
+}
+
+.charteBleue-title{
+  color: white;
+  font-size: 32px;
+  font-family: "Bebas Neue";
+}
+
+.charteBleue-form-text{
+  color: #3E8BED;
+  font-weight: bold;
+  font-family: "Lato";
+}
+
+.charteBleue-form-button{
+  background-color: #01152E;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  width: 300px;
+}
